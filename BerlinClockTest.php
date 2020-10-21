@@ -23,4 +23,13 @@ class BerlinClockTest extends TestCase {
         $this->assertEquals("YY", $actual);
 
     }
+
+    public function test_minute_given3_returnYYY(){
+        $clock = new BerlinClock();
+
+        $actual = $clock->minute(3);
+
+        $this->assertEquals("YYY", $actual);
+
+    }
 }
