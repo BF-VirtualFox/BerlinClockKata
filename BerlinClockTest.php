@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 
 class BerlinClockTest extends TestCase {
 
-    public function test_minute_given1_returnYellow(){
+    public function test_minute_given1_returnY(){
         $clock = new BerlinClock();
 
         $actual = $clock->minute(1);
@@ -15,7 +15,7 @@ class BerlinClockTest extends TestCase {
 
     }
 
-    public function test_minute_given2_returnYellowYellow(){
+    public function test_minute_given2_returnYY(){
         $clock = new BerlinClock();
 
         $actual = $clock->minute(2);
