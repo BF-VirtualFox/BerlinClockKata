@@ -5,11 +5,19 @@ class BerlinClock {
 
     public function minute(int $int): string{
 
-        if( $int === 2 || $int === 7) return "YYNN";
-        if( $int === 3 || $int === 8) return "YYYN";
-        if( $int === 4 || $int === 9) return "YYYY";
-        if( $int === 0 || $int === 5 || $int === 10) return "NNNN";
+        $tmp = $int%5;
 
-        return "YNNN";
+        switch ($tmp){
+            case 0 :
+                return "NNNN";
+            case 1 :
+                return "YNNN";
+            case 2 :
+                return "YYNN";
+            case 3 :
+                return "YYYN";
+            case 4 :
+                return "YYYY";
+        }
     }
 }
