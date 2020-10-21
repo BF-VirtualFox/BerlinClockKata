@@ -11,7 +11,7 @@ class BerlinClockTest extends TestCase {
 
         $actual = $clock->minute(1);
 
-        $this->assertEquals("Yellow", $actual);
+        $this->assertEquals("Y", $actual);
 
     }
 }

@@ -4,6 +4,6 @@
 class BerlinClock {
 
     public function minute(int $int): string{
-        return "Yellow";
+        return "Y";
     }
 }

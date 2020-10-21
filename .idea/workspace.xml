@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c72247bc-fef1-44ce-b34c-edfcb12c641f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BerlinClock.php" beforeDir="false" afterPath="$PROJECT_DIR$/BerlinClock.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BerlinClockTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/BerlinClockTest.php" afterDir="false" />
     </list>
@@ -67,6 +66,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -93,7 +93,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603267755726</updated>
-      <workItem from="1603267763404" duration="2580000" />
+      <workItem from="1603267763404" duration="2836000" />
     </task>
     <servers />
   </component>
@@ -101,6 +101,22 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state width="1322" height="192" key="GridCell.Tab.0.bottom" timestamp="1603270779426">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1322" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1603270779426" />
+    <state width="1322" height="192" key="GridCell.Tab.0.center" timestamp="1603270779425">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1322" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1603270779425" />
+    <state width="1322" height="192" key="GridCell.Tab.0.left" timestamp="1603270779425">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1322" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1603270779425" />
+    <state width="1322" height="192" key="GridCell.Tab.0.right" timestamp="1603270779425">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1322" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1603270779425" />
     <state x="492" y="107" key="NewPhpClassDialog" timestamp="1603267799138">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
