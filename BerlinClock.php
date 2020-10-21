@@ -8,7 +8,7 @@ class BerlinClock {
         if( $int === 2) return "YYNN";
         if( $int === 3) return "YYYN";
         if( $int === 4) return "YYYY";
-        if( $int === 0 || $int === 5) return "N";
+        if( $int === 0 || $int === 5) return "NNNN";
 
         return "YNNN";
     }

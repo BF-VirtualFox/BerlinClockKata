@@ -42,15 +42,15 @@ class BerlinClockTest extends TestCase {
         $this->assertEquals("YYYY", $actual);
     }
 
-    public function test_minute_given0_returnN(){
+    public function test_minute_given0_returnNNNN(){
         $actual = $this->minute(0);
 
-        $this->assertEquals("N", $actual);
+        $this->assertEquals("NNNN", $actual);
     }
 
-    public function test_minute_given5_returnN(){
+    public function test_minute_given5_returnNNNN(){
         $actual = $this->minute(5);
 
-        $this->assertEquals("N", $actual);
+        $this->assertEquals("NNNN", $actual);
     }
 }
