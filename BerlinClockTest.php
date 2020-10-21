@@ -71,4 +71,10 @@ class BerlinClockTest extends TestCase {
 
         $this->assertEquals("YYYN", $actual);
     }
+
+    public function test_minute_given9_returnYYYY(){
+        $actual = $this->minute(9);
+
+        $this->assertEquals("YYYY", $actual);
+    }
 }
