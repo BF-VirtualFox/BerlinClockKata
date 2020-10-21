@@ -6,28 +6,34 @@ use PHPUnit\Framework\TestCase;
 
 class BerlinClockTest extends TestCase {
 
-    public function test_minute_given1_returnY(){
-        $clock = new BerlinClock();
+    private $clock;
 
-        $actual = $clock->minute(1);
+    protected function setUp(): void
+    {
+        parent::setUp();
+        $this->clock = new BerlinClock();
+    }
+
+    private function minute(int $int){
+        return $this->clock->minute($int);
+    }
+
+    public function test_minute_given1_returnY(){
+        $actual = $this->minute(1);
 
         $this->assertEquals("Y", $actual);
 
     }
 
     public function test_minute_given2_returnYY(){
-        $clock = new BerlinClock();
-
-        $actual = $clock->minute(2);
+        $actual = $this->minute(2);
 
         $this->assertEquals("YY", $actual);
 
     }
 
     public function test_minute_given3_returnYYY(){
-        $clock = new BerlinClock();
-
-        $actual = $clock->minute(3);
+        $actual = $this->minute(3);
 
         $this->assertEquals("YYY", $actual);
 
