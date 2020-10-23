@@ -88,27 +88,27 @@ class BerlinClockTest extends TestCase {
         $this->assertEquals("NNNN", $actual);
     }
 
-    public function test_countMinutesPer5_given0_returnNNNN(){
+    public function test_countMinutesPer5_given0_returnNNNNNNNNNNN(){
         $actual = $this->countMinutesPer5(0);
 
-        $this->assertEquals("NNNN", $actual);
+        $this->assertEquals("NNNNNNNNNNN", $actual);
     }
 
-    public function test_countMinutesPer5_given5_returnYNNN(){
+    public function test_countMinutesPer5_given5_returnYNNNNNNNNNN(){
         $actual = $this->countMinutesPer5(5);
 
-        $this->assertEquals("YNNN", $actual);
+        $this->assertEquals("YNNNNNNNNNN", $actual);
     }
 
-    public function test_countMinutesPer5_given10_returnYYNN(){
+    public function test_countMinutesPer5_given10_returnYYNNNNNNNNN(){
         $actual = $this->countMinutesPer5(10);
 
-        $this->assertEquals("YYNN", $actual);
+        $this->assertEquals("YYNNNNNNNNN", $actual);
     }
 
-    public function test_countMinutesPer5_given15_returnYYRN(){
+    public function test_countMinutesPer5_given15_returnYYRNNNNNNNN(){
         $actual = $this->countMinutesPer5(15);
 
-        $this->assertEquals("YYRN", $actual);
+        $this->assertEquals("YYRNNNNNNNN", $actual);
     }
 }
