@@ -22,13 +22,20 @@ class BerlinClock {
     }
 
     public function countMinutesPer5 (int $int): string {
-        if($int === 5) return "YNNNNNNNNNN";
-        if($int === 10) return "YYNNNNNNNNN";
-        if($int === 15) return "YYRNNNNNNNN";
-        if($int === 20) return "YYRYNNNNNNN";
-        if($int === 25) return "YYRYYNNNNNN";
-        if($int === 30) return "YYRYYRNNNNN";
+        $count = $int/5;
+        $retour = "";
 
-        return "NNNNNNNNNNN";
+        for($i = 1; $i<=11; $i++){
+            if($i <= $count){
+                if($i%3 == 0)
+                    $retour .= "R";
+                else
+                    $retour .= "Y";
+            }else{
+                $retour .= "N";
+            }
+        }
+
+        return $retour;
     }
 }
