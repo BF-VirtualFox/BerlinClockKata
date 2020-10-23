@@ -135,4 +135,10 @@ class BerlinClockTest extends TestCase {
 
         $this->assertEquals("YYRYYRYYNNN", $actual);
     }
+
+    public function test_random_countMinutesPer5_given56_returnYYRYYRYYRYY(){
+        $actual = $this->countMinutesPer5(56);
+
+        $this->assertEquals("YYRYYRYYRYY", $actual);
+    }
 }
