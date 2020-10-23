@@ -20,4 +20,8 @@ class BerlinClock {
                 return "YYYY";
         }
     }
+
+    public function minute5(int $int): string {
+        return "NNNN";
+    }
 }
