@@ -15,77 +15,77 @@ class BerlinClockTest extends TestCase {
     }
 
     private function minute(int $int){
-        return $this->clock->minute($int);
+        return $this->clock->countMinutes($int);
     }
 
-    public function test_minute_given0_returnNNNN(){
+    public function test_countMinutes_given0_returnNNNN(){
         $actual = $this->minute(0);
 
         $this->assertEquals("NNNN", $actual);
     }
 
-    public function test_minute_given1_returnYNNN(){
+    public function test_countMinutes_given1_returnYNNN(){
         $actual = $this->minute(1);
 
         $this->assertEquals("YNNN", $actual);
     }
 
-    public function test_minute_given2_returnYYNN(){
+    public function test_countMinutes_given2_returnYYNN(){
         $actual = $this->minute(2);
 
         $this->assertEquals("YYNN", $actual);
     }
 
-    public function test_minute_given3_returnYYYN(){
+    public function test_countMinutes_given3_returnYYYN(){
         $actual = $this->minute(3);
 
         $this->assertEquals("YYYN", $actual);
     }
 
-    public function test_minute_given4_returnYYYY(){
+    public function test_countMinutes_given4_returnYYYY(){
         $actual = $this->minute(4);
 
         $this->assertEquals("YYYY", $actual);
     }
 
-    public function test_minute_given5_returnNNNN(){
+    public function test_countMinutes_given5_returnNNNN(){
         $actual = $this->minute(5);
 
         $this->assertEquals("NNNN", $actual);
     }
 
-    public function test_minute_given6_returnYNNN(){
+    public function test_countMinutes_given6_returnYNNN(){
         $actual = $this->minute(6);
 
         $this->assertEquals("YNNN", $actual);
     }
 
-    public function test_minute_given7_returnYYNN(){
+    public function test_countMinutes_given7_returnYYNN(){
         $actual = $this->minute(7);
 
         $this->assertEquals("YYNN", $actual);
     }
 
-    public function test_minute_given8_returnYYYN(){
+    public function test_countMinutes_given8_returnYYYN(){
         $actual = $this->minute(8);
 
         $this->assertEquals("YYYN", $actual);
     }
 
-    public function test_minute_given9_returnYYYY(){
+    public function test_countMinutes_given9_returnYYYY(){
         $actual = $this->minute(9);
 
         $this->assertEquals("YYYY", $actual);
     }
 
-    public function test_minute_given10_returnNNNN(){
+    public function test_countMinutes_given10_returnNNNN(){
         $actual = $this->minute(10);
 
         $this->assertEquals("NNNN", $actual);
     }
 
-    public function test_minute5_given0_returnNNNN(){
-        $actual = $this->clock->minute5(0);
+    public function test_countMinutesPer5_given0_returnNNNN(){
+        $actual = $this->clock->countMinutesPer5(0);
 
         $this->assertEquals("NNNN", $actual);
     }

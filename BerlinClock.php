@@ -3,7 +3,7 @@
 
 class BerlinClock {
 
-    public function minute(int $int): string{
+    public function countMinutes (int $int): string{
 
         $tmp = $int%5;
 
@@ -21,7 +21,7 @@ class BerlinClock {
         }
     }
 
-    public function minute5(int $int): string {
+    public function countMinutesPer5 (int $int): string {
         return "NNNN";
     }
 }
