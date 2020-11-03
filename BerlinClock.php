@@ -39,10 +39,20 @@ class BerlinClock {
     }
 
     public function countHours(int $int): string {
-        if($int%5 === 1) return "RNNN";
-        if($int%5 === 2) return "RRNN";
-        if($int%5 === 3) return "RRRN";
-        if($int%5 === 4) return "RRRR";
-        if($int%5 === 0) return "NNNN";
+
+        $tmp = $int%5;
+
+        switch ($tmp){
+            case 0 :
+                return "NNNN";
+            case 1 :
+                return "RNNN";
+            case 2 :
+                return "RRNN";
+            case 3 :
+                return "RRRN";
+            case 4 :
+                return "RRRR";
+        }
     }
 }
