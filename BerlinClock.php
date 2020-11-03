@@ -1,6 +1,5 @@
 <?php
 
-
 class BerlinClock {
 
     public function countMinutes (int $int): string{
@@ -37,5 +36,9 @@ class BerlinClock {
         }
 
         return $retour;
+    }
+
+    public function countHours(int $int): string {
+        return "NNNN";
     }
 }
