@@ -187,4 +187,10 @@ class BerlinClockTest extends TestCase {
 
         $this->assertEquals("RNNN", $actual);
     }
+
+    public function test_countHours_given7_returnRRNN(){
+        $actual = $this->countHours(7);
+
+        $this->assertEquals("RRNN", $actual);
+    }
 }
