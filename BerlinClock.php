@@ -39,6 +39,8 @@ class BerlinClock {
     }
 
     public function countHours(int $int): string {
+        if($int === 1) return "RNNN";
+
         return "NNNN";
     }
 }
