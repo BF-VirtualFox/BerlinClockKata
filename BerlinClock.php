@@ -56,6 +56,8 @@ class BerlinClock {
         }
     }
     public function countHoursPer5 (int $int): string {
+        if (int === 5) return "YNNN";
+
        return "NNNN";
     }
 }
