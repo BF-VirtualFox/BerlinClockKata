@@ -71,20 +71,20 @@ class BerlinClock {
 
     public function countMinutesPer5 (int $int): string {
         $count = $int/5;
-        $retour = "";
+        $ret = "";
 
         for($i = 1; $i<=11; $i++){
             if($i <= $count){
                 if($i%3 == 0)
-                    $retour .= "R";
+                    $ret .= "R";
                 else
-                    $retour .= "Y";
+                    $ret .= "Y";
             }else{
-                $retour .= "N";
+                $ret .= "N";
             }
         }
 
-        return $retour;
+        return $ret;
     }
 
     public function countHours(int $int): string {
@@ -106,16 +106,16 @@ class BerlinClock {
     }
     public function countHoursPer5 (int $int): string {
         $count = $int/5;
-        $return = "";
+        $ret = "";
 
         for($i = 1; $i<=4; $i++){
             if($i <= $count){
-                    $return .= "R";
+                    $ret .= "R";
             }else{
-                $return .= "N";
+                $ret .= "N";
             }
         }
-        return $return;
+        return $ret;
     }
     public function countSecondes(int $int) : string{
         $int=$int%2;
