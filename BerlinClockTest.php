@@ -29,6 +29,9 @@ class BerlinClockTest extends TestCase {
     private function countHoursPer5 (int $int){
         return $this->clock->coutHoursPer5($int);
     }
+    private function countSecondes (int $int){
+        return $this->clock->countSecondes($int);
+    }
 
     public function test_countMinutes_given0_returnNNNN(){
         $actual = $this->countMinutes(0);
@@ -258,19 +261,19 @@ class BerlinClockTest extends TestCase {
     }
 
     public function test_countSecondes_given0_returnR(){
-        $actual=$this->clock->countSecondes(0);
+        $actual=$this->countSecondes(0);
 
         $this->assertEquals("R",$actual);
     }
 
     public function test_countSecondes_given1_returnN(){
-        $actual=$this->clock->countSecondes(1);
+        $actual=$this->countSecondes(1);
 
         $this->assertEquals("N",$actual);
     }
 
     public function test_countSecondes_given2_returnR(){
-        $actual=$this->clock->countSecondes(R);
+        $actual=$this->countSecondes(R);
 
         $this->assertEquals("R",$actual);
     }
