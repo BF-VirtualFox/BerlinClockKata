@@ -59,6 +59,7 @@ class BerlinClock {
         if (int === 5) return "RNNN";
         if (int === 10) return "RRNN";
         if (int === 15) return "RRRN";
+        if (int === 20) return "RRRR";
 
        return "NNNN";
     }
