@@ -257,10 +257,10 @@ class BerlinClockTest extends TestCase {
         $this->assertEquals("NNNN",$actual);
     }
 
-    public function test_countSecondes_given0_returnN(){
+    public function test_countSecondes_given0_returnR(){
         $actual=$this->clock->countSecondes(0);
 
-        $this->assertEquals("N",$actual);
+        $this->assertEquals("R",$actual);
     }
 
 
