@@ -56,11 +56,16 @@ class BerlinClock {
         }
     }
     public function countHoursPer5 (int $int): string {
-        if (int === 5) return "RNNN";
-        if (int === 10) return "RRNN";
-        if (int === 15) return "RRRN";
-        if (int === 20) return "RRRR";
+        $count = $int/5;
+        $return = "";
 
-       return "NNNN";
+        for($i = 1; $i<=4; $i++){
+            if($i <= $count){
+                    $return .= "R";
+            }else{
+                $return .= "N";
+            }
+        }
+        return $return;
     }
 }
