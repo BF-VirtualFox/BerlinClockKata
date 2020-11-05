@@ -244,4 +244,12 @@ class BerlinClockTest extends TestCase {
 
         $this->assertEquals("RRRR",$actual);
     }
+
+    public function test_random_countHoursPer5_given17_returnRRRN(){
+        $actual = $this->countHoursPer5(17);
+
+        $this->assertEquals("RRRN",$actual);
+    }
+
+
 }
