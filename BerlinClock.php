@@ -68,4 +68,7 @@ class BerlinClock {
         }
         return $return;
     }
+    public function countSecondes(int $int) : string{
+        return "N";
+}
 }
